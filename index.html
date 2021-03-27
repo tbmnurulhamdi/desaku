@@ -16,6 +16,8 @@
 
 	<link href="css/app.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+	
 </head>
 
 <body>
@@ -41,14 +43,15 @@
 
 					<!-- pindahkan kata class "active" ke sidebar sesuai menu sidebar yang diklik -->
 					<!-- kata class "aktive" ditunjukan untuk menu yang sedang aktif -->
-					<li class="sidebar-item active">
+					<li class="sidebar-item ">
 						<a href="#inputdata" data-bs-toggle="collapse" class="sidebar-link collapsed">
 							<i class="align-middle" data-feather="users"></i> <span class="align-middle">Form Data</span>
 							</a>
 							<ul id="inputdata" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
 								<li class="sidebar-item"><a class="sidebar-link" href="#">Penduduk</a></li>
 								<li class="sidebar-item"><a class="sidebar-link" href="#">Keluarga</a></li>
-								<li class="sidebar-item active"><a class="sidebar-link" href="index.html">Hak Akses</a></li>
+								<li class="sidebar-item"><a class="sidebar-link" href="#">Migrasi</a></li>
+								<li class="sidebar-item "><a class="sidebar-link" href="index.html">Hak Akses</a></li>
 							</ul>
 					</li>
 
@@ -59,24 +62,24 @@
 							<ul id="ddata" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
 								<li class="sidebar-item"><a class="sidebar-link" href="#">Penduduk</a></li>
 								<li class="sidebar-item"><a class="sidebar-link" href="#">Keluarga</a></li>
+								<li class="sidebar-item"><a class="sidebar-link" href="#">Kelahiran</a></li>
+								<li class="sidebar-item"><a class="sidebar-link" href="#">Kematian</a></li>
 								<li class="sidebar-item"><a class="sidebar-link" href="#">Hak Akses</a></li>
+
+
 							</ul>
 					</li>
 
-					<li class="sidebar-item">
+					<!-- pindahkan kata class "active" ke sidebar sesuai menu sidebar yang diklik -->
+					<!-- kata class "aktive" ditunjukan untuk menu yang sedang aktif -->
+					<li class="sidebar-item active">
 						<a class="sidebar-link" href="#">
 						<i class="align-middle" data-feather="file"></i> <span class="align-middle">Surat Menyurat</span>
 						</a>
 					</li>
 
 					<li class="sidebar-item">
-						<a class="sidebar-link" href="#">
-						<i class="align-middle" data-feather="file-text"></i> <span class="align-middle">Laporan</span>
-						</a>
-					</li>
-
-					<li class="sidebar-item">
-						<a class="sidebar-link" href="#">
+						<a class="sidebar-link" href="contoh.html">
 						<i class="align-middle" data-feather="file-text"></i> <span class="align-middle">Laporan</span>
 						</a>
 					</li>
@@ -139,24 +142,25 @@
 			<main class="content">
 				<div class="container-fluid p-0">
 
-					<h1 class="h3 mb-3">Sura Menyurat</h1>
+					<h1 class="h3 mb-3">Surat Menyurat</h1>
 
 					<div class="row">
-						<div class="col-md-3 col-xl-2">
 
+						<!-- awal seluruh tombol menu surat -->
+						<div class="col-md-3 col-xl-2">
 							<div class="card">
 								<div class="card-header">
 									<h5 class="card-title mb-0">Surat Pengantar</h5>
 								</div>
 
 								<div class="list-group list-group-flush" role="tablist">
-									<a class="list-group-item list-group-item-action active" data-bs-toggle="list" href="#account" role="tab">
+									<a class="list-group-item list-group-item-action active" data-bs-toggle="list" href="#sipil" role="tab">
 										Catatan Sipil
 									</a>
-									<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#password" role="tab">
+									<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#ktp" role="tab">
 										KTP
 									</a>
-									<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#" role="tab">
+									<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#pindahpenduduk" role="tab">
 										Pindah Penduduk
 									</a>
 									<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#" role="tab">
@@ -177,126 +181,212 @@
 								</div>
 							</div>
 						</div>
+						<!-- akhir seluruh tombol menu surat -->
 
+
+						<!-- awal seluruh form input surat -->
 						<div class="col-md-9 col-xl-10">
 							<div class="tab-content">
-								<div class="tab-pane fade show active" id="account" role="tabpanel">
+
+								<!-- awal form input catatan sipil -->
+								<div class="tab-pane fade show active" id="sipil" role="tabpanel">
 
 									<div class="card">
 										<div class="card-header">
 
-											<h5 class="card-title mb-0">Public info</h5>
+											<h5 class="card-title mb-0">Catatan Sipil</h5>
 										</div>
 										<div class="card-body">
-											<form>
-												<div class="row">
-													<div class="col-md-8">
-														<div class="mb-3">
-															<label class="form-label" for="inputUsername">Username</label>
-															<input type="text" class="form-control" id="inputUsername" placeholder="Username">
-														</div>
-														<div class="mb-3">
-															<label class="form-label" for="inputUsername">Biography</label>
-															<textarea rows="2" class="form-control" id="inputBio" placeholder="Tell something about yourself"></textarea>
-														</div>
-													</div>
-													<div class="col-md-4">
-														<div class="text-center">
-															<img alt="Charles Hall" src="img/avatars/avatar.jpg" class="rounded-circle img-responsive mt-2" width="128" height="128" />
-															<div class="mt-2">
-																<span class="btn btn-primary">Upload</span>
-															</div>
-															<small>For best results, use an image at least 128px by 128px in .jpg format</small>
-														</div>
-													</div>
-												</div>
-
-												<button type="submit" class="btn btn-primary">Save changes</button>
-											</form>
-
-										</div>
-									</div>
-
-									<div class="card">
-										<div class="card-header">
-
-											<h5 class="card-title mb-0">Private info</h5>
-										</div>
-										<div class="card-body">
-											<form>
-												<div class="row">
-													<div class="mb-3 col-md-6">
-														<label class="form-label" for="inputFirstName">First name</label>
-														<input type="text" class="form-control" id="inputFirstName" placeholder="First name">
-													</div>
-													<div class="mb-3 col-md-6">
-														<label class="form-label" for="inputLastName">Last name</label>
-														<input type="text" class="form-control" id="inputLastName" placeholder="Last name">
-													</div>
+											
+											<form action="" method="POST">
+												<div class="mb-3">
+													<input type="text" class="form-control" name="nik" placeholder="NIK">
 												</div>
 												<div class="mb-3">
-													<label class="form-label" for="inputEmail4">Email</label>
-													<input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+													<input type="text" class="form-control" name="nama" placeholder="Nama Lengkap">
 												</div>
 												<div class="mb-3">
-													<label class="form-label" for="inputAddress">Address</label>
-													<input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+													<input type="text" class="form-control" name="no_kk" placeholder="No. KK">
 												</div>
 												<div class="mb-3">
-													<label class="form-label" for="inputAddress2">Address 2</label>
-													<input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+													<input type="text" class="form-control" name="tempat_lahir" placeholder="Tempat Lahir">
 												</div>
-												<div class="row">
-													<div class="mb-3 col-md-6">
-														<label class="form-label" for="inputCity">City</label>
-														<input type="text" class="form-control" id="inputCity">
-													</div>
-													<div class="mb-3 col-md-4">
-														<label class="form-label" for="inputState">State</label>
-														<select id="inputState" class="form-control">
-														<option selected>Choose...</option>
-														<option>...</option>
-														</select>
-													</div>
-													<div class="mb-3 col-md-2">
-														<label class="form-label" for="inputZip">Zip</label>
-														<input type="text" class="form-control" id="inputZip">
-													</div>
+												<div class="mb-3">
+													<input type="text" class="form-control" name="tgl_lahir" placeholder="Tanggal Lahir">
 												</div>
-												<button type="submit" class="btn btn-primary">Save changes</button>
+												<div class="mb-3">
+													<input type="text" class="form-control" name="jl" placeholder="Jenis Kelamin">
+												</div>
+												<div class="mb-3">
+													<input type="text" class="form-control" name="status" placeholder="Status">
+												</div>
+												<div class="mb-3">
+													<input type="text" class="form-control" name="pekerjaan" placeholder="Pekerjaan">
+												</div>
+												<div class="mb-3">
+													<input type="text" class="form-control" name="alamat" placeholder="Alamat">
+												</div>
+												<div class="mb-3 text-end">
+													<button type="submit" class="btn btn-primary">
+														<i class="align-middle me-2" data-feather="printer"></i> <span class="align-middle">Cetak</span>
+													</button>
+												</div>
 											</form>
 
 										</div>
 									</div>
 
 								</div>
-								<div class="tab-pane fade" id="password" role="tabpanel">
-									<div class="card">
-										<div class="card-body">
-											<h5 class="card-title">Password</h5>
+								<!-- akhir form input catatan sipil -->
 
-											<form>
+
+								<!-- awal form input mengurus ktp -->
+								<div class="tab-pane fade" id="ktp" role="tabpanel">
+									<div class="card">
+										<div class="card-header">
+
+											<h5 class="card-title mb-0">KTP</h5>
+										</div>
+										<div class="card-body">
+
+											<form action="" method="POST">
 												<div class="mb-3">
-													<label class="form-label" for="inputPasswordCurrent">Current password</label>
-													<input type="password" class="form-control" id="inputPasswordCurrent">
-													<small><a href="#">Forgot your password?</a></small>
+													<input type="text" class="form-control" name="nik" placeholder="NIK">
 												</div>
 												<div class="mb-3">
-													<label class="form-label" for="inputPasswordNew">New password</label>
-													<input type="password" class="form-control" id="inputPasswordNew">
+													<input type="text" class="form-control" name="nama" placeholder="Nama Lengkap">
 												</div>
 												<div class="mb-3">
-													<label class="form-label" for="inputPasswordNew2">Verify password</label>
-													<input type="password" class="form-control" id="inputPasswordNew2">
+													<input type="text" class="form-control" name="no_kk" placeholder="No. KK">
 												</div>
-												<button type="submit" class="btn btn-primary">Save changes</button>
+												<div class="mb-3">
+													<input type="text" class="form-control" name="tempat_lahir" placeholder="Tempat Lahir">
+												</div>
+												<div class="mb-3">
+													<input type="text" class="form-control" name="tgl_lahir" placeholder="Tanggal Lahir">
+												</div>
+												<div class="mb-3">
+													<input type="text" class="form-control" name="jl" placeholder="Jenis Kelamin">
+												</div>
+												<div class="mb-3">
+													<input type="text" class="form-control" name="status" placeholder="Status">
+												</div>
+												<div class="mb-3">
+													<input type="text" class="form-control" name="wn" placeholder="Kewarganegaraan">
+												</div>
+												<div class="mb-3">
+													<input type="text" class="form-control" name="agama" placeholder="Agama">
+												</div>
+												<div class="mb-3">
+													<input type="text" class="form-control" name="gol_dar" placeholder="Golongan Darah">
+												</div>
+												<div class="mb-3">
+													<input type="text" class="form-control" name="pekerjaan" placeholder="Pekerjaan">
+												</div>
+												<div class="mb-3">
+													<input type="text" class="form-control" name="alamat" placeholder="Alamat">
+												</div>
+												<div class="mb-3 text-end">
+													<button type="submit" class="btn btn-primary">
+														<i class="align-middle me-2" data-feather="printer"></i> <span class="align-middle">Cetak</span>
+													</button>
+												</div>
+											</form>
+
+
+										</div>
+									</div>
+								</div>
+								<!-- akhir form input mengurus ktp -->
+
+								<!-- awal form input pindah penduduk -->
+								<div class="tab-pane fade" id="pindahpenduduk" role="tabpanel">
+									<div class="card">
+										<div class="card-header">
+
+											<h5 class="card-title mb-0">Pindah Penduduk</h5>
+										</div>
+										<div class="card-body">
+
+											<form action="" method="POST">
+												<div class="row">
+													<div class="mb-3">
+														<input type="text" class="form-control" name="nik" placeholder="NIK">
+													</div>
+													<div class="mb-3">
+														<input type="text" class="form-control" name="nama" placeholder="Nama Lengkap">
+													</div>
+													<div class="mb-3">
+														<input type="text" class="form-control" name="no_kk" placeholder="No. KK">
+													</div>
+													<div class="mb-3 col-md-6">
+														<input type="text" class="form-control" name="tempat_lahir" placeholder="Tempat Lahir">
+													</div>
+													<div class="mb-3 col-md-6">
+														<input type="text" class="form-control" name="tgl_lahir" placeholder="Tanggal Lahir">
+													</div>
+													<div class="mb-3">
+														<input type="text" class="form-control" name="jk" placeholder="Jenis Kelamin">
+													</div>
+													<div class="mb-3">
+														<input type="text" class="form-control" name="status" placeholder="Status">
+													</div>
+													<div class="mb-3 col-md-6">
+														<input type="text" class="form-control" name="wn" placeholder="Kewarganegaraan">
+													</div>
+													<div class="mb-3 col-md-6">
+														<input type="text" class="form-control" name="agama" placeholder="Agama">
+													</div>
+													<div class="mb-3">
+														<input type="text" class="form-control" name="pekerjaan" placeholder="Pekerjaan">
+													</div>
+
+													<div class="mb-3 col-md-6">
+														<input type="text" class="form-control" name="alamat_lama" placeholder="Alamat Lama">
+													</div>
+													<div class="mb-3 col-md-6">
+														<input type="text" class="form-control" name="pindahke" placeholder="Pindah ke">
+													</div>
+													<div class="mb-3 col-md-6">
+														<textarea type="text" class="form-control" rows="2" name="alasan" placeholder="Alasan"></textarea>
+													</div>
+													<div class="mb-3 col-md-3">
+														<input type="text" class="form-control" name="jml_ikut" placeholder="Jumlah Pengikut">
+													</div>
+													<div class="mb-3 col-md-3">
+
+														<!-- saat tombol tambah di click maka akan muncul form input pengikut -->
+														<button class="btn btn-success add-more" type="button">
+															<i class="align-middle" data-feather="plus"></i>
+														</button>
+
+														<!-- saat tombol hapus di click maka form input pengikut akan hilang -->
+														<button class="btn btn-danger remove" type="button">
+															<i class="align-middle" data-feather="trash"></i>
+														</button>
+													</div>
+												</div>
+												
+												<div id="group">
+
+												</div>
+
+												<div class="mb-3 text-end">
+													<button type="submit" class="btn btn-primary">
+														<i class="align-middle me-2" data-feather="printer"></i> <span class="align-middle">Cetak</span>
+													</button>
+												</div>
 											</form>
 
 										</div>
 									</div>
 								</div>
+								<!-- akhir form input pindah penduduk -->
+
 							</div>
 						</div>
+						<!-- akhir seluruh form input surat -->
+
 					</div>
 
 				</div>
@@ -322,38 +412,54 @@
 	</div>
 
 	<script src="js/app.js"></script>
+	
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 
-	<!-- awal pengelola data charts -->
-	<script>
-		document.addEventListener("DOMContentLoaded", function() {
-			// Pie chart
-			new Chart(document.getElementById("chartjs-dashboard-pie"), {
-				type: "pie",
-				data: {
-					labels: ["Pria", "Wanita"],
-					datasets: [{
-						data: [1323, 1423],
-						backgroundColor: [
-							window.theme.primary,
-							window.theme.warning,
-							window.theme.danger
-						],
-						borderWidth: 5
-					}]
-				},
-				options: {
-					responsive: !window.MSInputMethodContext,
-					maintainAspectRatio: false,
-					legend: {
-						display: false
-					},
-					cutoutPercentage: 75
-				}
-			});
-		});
-	</script>
-	<!-- akhir pengelola data charts -->
+	<!-- awal pengelola pengikut pindah penduduk -->
+      <script type="text/javascript">
+         $ (document).ready(function() {
+				var i = 1;
+				// saat tombol tambah ditekan, function ini akan bekerja menambahkan form input pengikut  
+            $ (".add-more").click(function() {
+               if (i > 10) {
+                  alert("maksimal 10 input."); //saat sudah 10 form ditambahkan, pesan ini akan muncul
+                  return false;
+               }
+               var div = $(document.createElement('div')).attr('class', 'row add' + i);
+               div.after().html(
+						'<h5 class="card-title mb-0">Pengikut '+i+'</h5>'
+						+ '<div class="mb-3 col-md-4">'
+                  +'<input type="text" class="form-control" name="nikikut'+i+'" placeholder="NIK">'
+                  +'</div>'
+                  + '<div class="mb-3 col-md-8">'
+                     +'<input type="text" class="form-control" name="namaikut'+i+'" placeholder="Nama Lengkap">'
+                  +'</div>'
+                  + '<div class="mb-3 col-md-5">'
+					   	+ '<input type="text" class="form-control" name="jkikut'+i+'" placeholder="Kelamin">'
+						+ '</div>'
+                  + '<div class="mb-3 col-md-3">'
+					   	+ '<input type="text" class="form-control" name="umurikut'+i+'" placeholder="umur">'
+						+ '</div>'
+						+ '<div class="mb-3 col-md-4">'
+					   	+ '<input type="text" class="form-control" name="agamaikut'+i+'" placeholder="Agama">'
+						+ '</div>');
+               div.appendTo("#group");
+               i++;
+
+				});
+				// saat tombol hapus ditekan, function ini akan bekerja menghapus form input pengikut  
+            $(".remove").click(function(){
+               if(i==1){
+                  alert("input tidak bisa dihapus lagi"); // pesan batas menghapus form
+                  return false;
+               }
+               i--;
+               $(".add" + i).remove();
+            });
+         });
+      </script>
+	<!-- akhir pengelola pengikut pindah penduduk -->
 
 </body>
 
