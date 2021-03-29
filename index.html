@@ -22,6 +22,7 @@
 
 <body>
 	<div class="wrapper">
+		
 		<!-- awal menu sidebar -->
 		<nav id="sidebar" class="sidebar">
 			<div class="sidebar-content js-simplebar">
@@ -155,7 +156,7 @@
 
 								<div class="list-group list-group-flush" role="tablist">
 									<a class="list-group-item list-group-item-action active" data-bs-toggle="list" href="#sipil" role="tab">
-										Catatan Sipil
+										Keterangan Domisili
 									</a>
 									<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#ktp" role="tab">
 										KTP
@@ -188,56 +189,59 @@
 						<div class="col-md-9 col-xl-10">
 							<div class="tab-content">
 
-								<!-- awal form input catatan sipil -->
+								<!-- awal form input keterangan domisili -->
 								<div class="tab-pane fade show active" id="sipil" role="tabpanel">
 
 									<div class="card">
 										<div class="card-header">
 
-											<h5 class="card-title mb-0">Catatan Sipil</h5>
+											<h5 class="card-title mb-0">Keterangan Domisili</h5>
 										</div>
 										<div class="card-body">
 											
 											<form action="" method="POST">
-												<div class="mb-3">
-													<input type="text" class="form-control" name="nik" placeholder="NIK">
+												<div class="row">
+													<div class="mb-3 col-md-4">
+														<input type="text" class="form-control" name="nik" placeholder="NIK">
+													</div>
+													<div class="mb-3 col-md-8">
+														<input type="text" class="form-control" name="nama" placeholder="Nama Lengkap">
+													</div>
+													<div class="mb-3 col-md-4">
+														<input type="text" class="form-control" name="tempat_lahir" placeholder="Tempat Lahir">
+													</div>
+													<div class="mb-3 col-md-4">
+														<input type="date" class="form-control" name="tgl_lahir" placeholder="Tanggal Lahir">
+													</div>
+													<div class="mb-3 col-md-4">
+														<input type="text" class="form-control" name="jl" placeholder="Jenis Kelamin">
+													</div>
+													<div class="mb-3 col-md-4">
+														<input type="text" class="form-control" name="wn" placeholder="Kewarganegaraan">
+													</div>
+													<div class="mb-3 col-md-4">
+														<input type="text" class="form-control" name="agama" placeholder="Agama">
+													</div>
+													<div class="mb-3 col-md-4">
+														<input type="text" class="form-control" name="pekerjaan" placeholder="Pekerjaan">
+													</div>
+													<div class="mb-3 col-md-10">
+														<textarea type="text" class="form-control" rows="2" name="alamat" placeholder="Alamat"></textarea>
+													</div>
+													<div class="col-md-2 text-bottom">
+														<button type="submit" class="btn btn-primary">
+															<i class="align-middle me-2" data-feather="printer"></i> <span class="align-middle">Cetak</span>
+														</button>
+													</div>
 												</div>
-												<div class="mb-3">
-													<input type="text" class="form-control" name="nama" placeholder="Nama Lengkap">
-												</div>
-												<div class="mb-3">
-													<input type="text" class="form-control" name="no_kk" placeholder="No. KK">
-												</div>
-												<div class="mb-3">
-													<input type="text" class="form-control" name="tempat_lahir" placeholder="Tempat Lahir">
-												</div>
-												<div class="mb-3">
-													<input type="text" class="form-control" name="tgl_lahir" placeholder="Tanggal Lahir">
-												</div>
-												<div class="mb-3">
-													<input type="text" class="form-control" name="jl" placeholder="Jenis Kelamin">
-												</div>
-												<div class="mb-3">
-													<input type="text" class="form-control" name="status" placeholder="Status">
-												</div>
-												<div class="mb-3">
-													<input type="text" class="form-control" name="pekerjaan" placeholder="Pekerjaan">
-												</div>
-												<div class="mb-3">
-													<input type="text" class="form-control" name="alamat" placeholder="Alamat">
-												</div>
-												<div class="mb-3 text-end">
-													<button type="submit" class="btn btn-primary">
-														<i class="align-middle me-2" data-feather="printer"></i> <span class="align-middle">Cetak</span>
-													</button>
-												</div>
+												
 											</form>
 
 										</div>
 									</div>
 
 								</div>
-								<!-- akhir form input catatan sipil -->
+								<!-- akhir form input keterangan domisili -->
 
 
 								<!-- awal form input mengurus ktp -->
@@ -392,7 +396,6 @@
 				</div>
 			</main>
 			<!-- akhir bagian konten -->
-
 
 			<!-- awal bagian footer -->
 			<footer class="footer">
