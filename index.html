@@ -80,7 +80,7 @@
 					</li>
 
 					<li class="sidebar-item">
-						<a class="sidebar-link" href="contoh.html">
+						<a class="sidebar-link" href="contoh.php">
 						<i class="align-middle" data-feather="file-text"></i> <span class="align-middle">Laporan</span>
 						</a>
 					</li>
@@ -211,7 +211,7 @@
 														<input type="text" class="form-control" name="tempat_lahir" placeholder="Tempat Lahir">
 													</div>
 													<div class="mb-3 col-md-4">
-														<input type="date" class="form-control" name="tgl_lahir" placeholder="Tanggal Lahir">
+														<input type="date" class="tm form-control" id="tgl-indo" name="tgl_lahir" placeholder="Tanggal Lahir">
 													</div>
 													<div class="mb-3 col-md-4">
 														<input type="text" class="form-control" name="jl" placeholder="Jenis Kelamin">
@@ -419,6 +419,14 @@
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 
+	<script>
+		$( function() {
+			$("#tgl-indo").datetimepicker({
+				locale:'id',
+				format:'DD/MMMM/YYYY'
+			});
+		} );
+		</script>
 	<!-- awal pengelola pengikut pindah penduduk -->
       <script type="text/javascript">
          $ (document).ready(function() {
