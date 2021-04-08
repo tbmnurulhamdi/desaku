@@ -200,7 +200,7 @@
 														</select>
 													</div>
 													<div class="mb-3 col-md-6 text-end">
-														<button type="input" class="btn btn-primary"><i class="align-middle me-2" data-feather="plus"></i> <span class="align-middle">Tambahkan</span>
+														<button type="input" class="btn btn-primary" onclick="return confirm('yakin tambah hak akses')" ><i class="align-middle me-2" data-feather="plus"></i> <span class="align-middle">Tambahkan</span>
 														</button>
 													</div>
 												</div>							
