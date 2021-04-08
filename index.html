@@ -44,16 +44,10 @@
 
 					<!-- pindahkan kata class "active" ke sidebar sesuai menu sidebar yang diklik -->
 					<!-- kata class "aktive" ditunjukan untuk menu yang sedang aktif -->
-					<li class="sidebar-item ">
-						<a href="#inputdata" data-bs-toggle="collapse" class="sidebar-link collapsed">
-							<i class="align-middle" data-feather="users"></i> <span class="align-middle">Form Data</span>
-							</a>
-							<ul id="inputdata" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
-								<li class="sidebar-item"><a class="sidebar-link" href="#">Penduduk</a></li>
-								<li class="sidebar-item"><a class="sidebar-link" href="#">Keluarga</a></li>
-								<li class="sidebar-item"><a class="sidebar-link" href="#">Migrasi</a></li>
-								<li class="sidebar-item "><a class="sidebar-link" href="index.html">Hak Akses</a></li>
-							</ul>
+					<li class="sidebar-item active">
+						<a class="sidebar-link" href="#">
+							<i class="align-middle" data-feather="users"></i> <span class="align-middle">Form Input</span>
+						</a>
 					</li>
 
 					<li class="sidebar-item">
@@ -71,16 +65,14 @@
 							</ul>
 					</li>
 
-					<!-- pindahkan kata class "active" ke sidebar sesuai menu sidebar yang diklik -->
-					<!-- kata class "aktive" ditunjukan untuk menu yang sedang aktif -->
-					<li class="sidebar-item active">
+					<li class="sidebar-item">
 						<a class="sidebar-link" href="#">
 						<i class="align-middle" data-feather="file"></i> <span class="align-middle">Surat Menyurat</span>
 						</a>
 					</li>
 
 					<li class="sidebar-item">
-						<a class="sidebar-link" href="contoh.php">
+						<a class="sidebar-link" href="contoh2.php">
 						<i class="align-middle" data-feather="file-text"></i> <span class="align-middle">Laporan</span>
 						</a>
 					</li>
@@ -143,7 +135,7 @@
 			<main class="content">
 				<div class="container-fluid p-0">
 
-					<h1 class="h3 mb-3">Surat Menyurat</h1>
+					<h1 class="h3 mb-3">Form Input </h1>
 
 					<div class="row">
 
@@ -151,33 +143,21 @@
 						<div class="col-md-3 col-xl-2">
 							<div class="card">
 								<div class="card-header">
-									<h5 class="card-title mb-0">Surat Pengantar</h5>
+									<h5 class="card-title mb-0">Form Input</h5>
 								</div>
 
 								<div class="list-group list-group-flush" role="tablist">
-									<a class="list-group-item list-group-item-action active" data-bs-toggle="list" href="#sipil" role="tab">
-										Keterangan Domisili
+									<a class="list-group-item list-group-item-action active" data-bs-toggle="list" href="#hakakses" role="tab">
+										Hak Akses
 									</a>
-									<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#ktp" role="tab">
-										KTP
+									<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#formpenduduk" role="tab">
+										Penduduk
 									</a>
-									<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#pindahpenduduk" role="tab">
-										Pindah Penduduk
-									</a>
-									<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#" role="tab">
-										Pembuatan KK
+									<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#fomrkeluarga" role="tab">
+										Keluarga
 									</a>
 									<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#" role="tab">
-										Akte Kelahiran
-									</a>
-									<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#" role="tab">
-										Menikah
-									</a>
-									<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#" role="tab">
-										Gugatan Cerai
-									</a>
-									<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#" role="tab">
-										Pembuatan NPWP
+										Migrasi
 									</a>
 								</div>
 							</div>
@@ -189,59 +169,48 @@
 						<div class="col-md-9 col-xl-10">
 							<div class="tab-content">
 
-								<!-- awal form input keterangan domisili -->
-								<div class="tab-pane fade show active" id="sipil" role="tabpanel">
+								<!-- awal form input hak akses -->
+								<div class="tab-pane fade show active" id="hakakses" role="tabpanel">
 
 									<div class="card">
 										<div class="card-header">
 
-											<h5 class="card-title mb-0">Keterangan Domisili</h5>
+											<h5 class="card-title mb-0">Hak Akses</h5>
 										</div>
 										<div class="card-body">
-											
 											<form action="" method="POST">
 												<div class="row">
-													<div class="mb-3 col-md-4">
-														<input type="text" class="form-control" name="nik" placeholder="NIK">
+													<div class="mb-3 col-md-12">
+														<input type="text" class="form-control" name="username" placeholder="Username" required>
 													</div>
-													<div class="mb-3 col-md-8">
-														<input type="text" class="form-control" name="nama" placeholder="Nama Lengkap">
+													<div class="mb-3 col-md-12">
+														<input type="text" class="form-control" name="email" placeholder="Email" required>
 													</div>
-													<div class="mb-3 col-md-4">
-														<input type="text" class="form-control" name="tempat_lahir" placeholder="Tempat Lahir">
+													<div class="mb-3 col-md-6">
+														<input type="password" class="form-control" name="password" placeholder="Password" required>
 													</div>
-													<div class="mb-3 col-md-4">
-														<input type="date" class="tm form-control" id="tgl-indo" name="tgl_lahir" placeholder="Tanggal Lahir">
+													<div class="mb-3 col-md-6">
+														<input type="password" class="form-control" name="confirmpass" placeholder="Confirm Password" required>
 													</div>
-													<div class="mb-3 col-md-4">
-														<input type="text" class="form-control" name="jl" placeholder="Jenis Kelamin">
+													<div class="mb-3 col-md-6">
+														<select class="form-control" required>
+															<option selected>Pegawai</option>
+															<option>Pengurus</option>
+															<option>Admin</option>
+														</select>
 													</div>
-													<div class="mb-3 col-md-4">
-														<input type="text" class="form-control" name="wn" placeholder="Kewarganegaraan">
-													</div>
-													<div class="mb-3 col-md-4">
-														<input type="text" class="form-control" name="agama" placeholder="Agama">
-													</div>
-													<div class="mb-3 col-md-4">
-														<input type="text" class="form-control" name="pekerjaan" placeholder="Pekerjaan">
-													</div>
-													<div class="mb-3 col-md-10">
-														<textarea type="text" class="form-control" rows="2" name="alamat" placeholder="Alamat"></textarea>
-													</div>
-													<div class="col-md-2 text-bottom">
-														<button type="submit" class="btn btn-primary">
-															<i class="align-middle me-2" data-feather="printer"></i> <span class="align-middle">Cetak</span>
+													<div class="mb-3 col-md-6 text-end">
+														<button type="input" class="btn btn-primary"><i class="align-middle me-2" data-feather="plus"></i> <span class="align-middle">Tambahkan</span>
 														</button>
 													</div>
-												</div>
-												
+												</div>							
 											</form>
 
 										</div>
 									</div>
 
 								</div>
-								<!-- akhir form input keterangan domisili -->
+								<!-- akhir form input hak akses -->
 
 
 								<!-- awal form input mengurus ktp -->
