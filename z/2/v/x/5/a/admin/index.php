@@ -34,55 +34,55 @@
 
 					<!-- pindahkan kata class "active" ke sidebar sesuai menu sidebar yang diklik -->
 					<!-- kata class "aktive" ditunjukan untuk menu yang sedang aktif -->
-					<li class="sidebar-item active">  
+					<li class="sidebar-item active">
 						<a class="sidebar-link" href="index.html">
-						<i class="align-middle" data-feather="home"></i> <span class="align-middle">Dashboard</span>
+							<i class="align-middle" data-feather="home"></i> <span class="align-middle">Dashboard</span>
 						</a>
 					</li>
 
 					<li class="sidebar-item">
 						<a href="#inputdata" data-bs-toggle="collapse" class="sidebar-link collapsed">
 							<i class="align-middle" data-feather="users"></i> <span class="align-middle">Form Data</span>
-							</a>
-							<ul id="inputdata" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
-								<li class="sidebar-item"><a class="sidebar-link" href="#">Penduduk</a></li>
-								<li class="sidebar-item"><a class="sidebar-link" href="#">Keluarga</a></li>
-								<li class="sidebar-item"><a class="sidebar-link" href="#">Migrasi</a></li>
-								<li class="sidebar-item"><a class="sidebar-link" href="../../../5/z/x/7/admin/input/hakakses/">Hak Akses</a></li>
-							</ul>
+						</a>
+						<ul id="inputdata" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link" href="#">Penduduk</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="#">Keluarga</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="#">Migrasi</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="../../../5/z/x/7/admin/input/hakakses/">Hak Akses</a></li>
+						</ul>
 					</li>
 
 					<li class="sidebar-item">
 						<a href="#ddata" data-bs-toggle="collapse" class="sidebar-link collapsed">
 							<i class="align-middle" data-feather="users"></i> <span class="align-middle">Daftar Data</span>
-							</a>
-							<ul id="ddata" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
-								<li class="sidebar-item"><a class="sidebar-link" href="#">Penduduk</a></li>
-								<li class="sidebar-item"><a class="sidebar-link" href="#">Keluarga</a></li>
-								<li class="sidebar-item"><a class="sidebar-link" href="#">Kelahiran</a></li>
-								<li class="sidebar-item"><a class="sidebar-link" href="#">Kematian</a></li>
-								<li class="sidebar-item"><a class="sidebar-link" href="#">Hak Akses</a></li>
-							</ul>
+						</a>
+						<ul id="ddata" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link" href="#">Penduduk</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="#">Keluarga</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="#">Kelahiran</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="#">Kematian</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="#">Hak Akses</a></li>
+						</ul>
 					</li>
 
 					<li class="sidebar-item">
 						<a class="sidebar-link" href="#">
-						<i class="align-middle" data-feather="file"></i> <span class="align-middle">Surat Menyurat</span>
+							<i class="align-middle" data-feather="file"></i> <span class="align-middle">Surat Menyurat</span>
 						</a>
 					</li>
-					
+
 					<li class="sidebar-item">
 						<a class="sidebar-link" href="#">
-						<i class="align-middle" data-feather="file-text"></i> <span class="align-middle">Laporan</span>
+							<i class="align-middle" data-feather="file-text"></i> <span class="align-middle">Laporan</span>
 						</a>
 					</li>
 
 					<li class="sidebar-item">
 						<a class="sidebar-link" href="pages-settings.html">
-						<i class="align-middle" data-feather="settings"></i> <span class="align-middle">Pengaturan</span>
+							<i class="align-middle" data-feather="settings"></i> <span class="align-middle">Pengaturan</span>
 						</a>
 					</li>
-					
+
 
 				</ul>
 			</div>
@@ -158,7 +158,7 @@
 												<h1 class="mt-1 mb-3">0</h1>
 												<div class="mb-1">
 													<a href="#" class="text-muted"> <span class="align-middle">Selengkapnya</span> <i class="align-middle" data-feather="arrow-right-circle"></i></a>
-													
+
 												</div>
 											</div>
 										</div>
@@ -247,86 +247,7 @@
 					<!-- akhir row/baris konten pertana -->
 
 
-<!-- 
-					<div class="row">
-						<div class="col-12 col-lg-8 col-xxl-9 d-flex">
-							<div class="card flex-fill">
-								<div class="card-header">
 
-									<h5 class="card-title mb-0">Latest Projects</h5>
-								</div>
-								<table class="table table-hover my-0">
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th class="d-none d-xl-table-cell">Start Date</th>
-											<th class="d-none d-xl-table-cell">End Date</th>
-											<th>Status</th>
-											<th class="d-none d-md-table-cell">Assignee</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Project Apollo</td>
-											<td class="d-none d-xl-table-cell">01/01/2021</td>
-											<td class="d-none d-xl-table-cell">31/06/2021</td>
-											<td><span class="badge bg-success">Done</span></td>
-											<td class="d-none d-md-table-cell">Vanessa Tucker</td>
-										</tr>
-										<tr>
-											<td>Project Fireball</td>
-											<td class="d-none d-xl-table-cell">01/01/2021</td>
-											<td class="d-none d-xl-table-cell">31/06/2021</td>
-											<td><span class="badge bg-danger">Cancelled</span></td>
-											<td class="d-none d-md-table-cell">William Harris</td>
-										</tr>
-										<tr>
-											<td>Project Hades</td>
-											<td class="d-none d-xl-table-cell">01/01/2021</td>
-											<td class="d-none d-xl-table-cell">31/06/2021</td>
-											<td><span class="badge bg-success">Done</span></td>
-											<td class="d-none d-md-table-cell">Sharon Lessman</td>
-										</tr>
-										<tr>
-											<td>Project Nitro</td>
-											<td class="d-none d-xl-table-cell">01/01/2021</td>
-											<td class="d-none d-xl-table-cell">31/06/2021</td>
-											<td><span class="badge bg-warning">In progress</span></td>
-											<td class="d-none d-md-table-cell">Vanessa Tucker</td>
-										</tr>
-										<tr>
-											<td>Project Phoenix</td>
-											<td class="d-none d-xl-table-cell">01/01/2021</td>
-											<td class="d-none d-xl-table-cell">31/06/2021</td>
-											<td><span class="badge bg-success">Done</span></td>
-											<td class="d-none d-md-table-cell">William Harris</td>
-										</tr>
-										<tr>
-											<td>Project X</td>
-											<td class="d-none d-xl-table-cell">01/01/2021</td>
-											<td class="d-none d-xl-table-cell">31/06/2021</td>
-											<td><span class="badge bg-success">Done</span></td>
-											<td class="d-none d-md-table-cell">Sharon Lessman</td>
-										</tr>
-										<tr>
-											<td>Project Romeo</td>
-											<td class="d-none d-xl-table-cell">01/01/2021</td>
-											<td class="d-none d-xl-table-cell">31/06/2021</td>
-											<td><span class="badge bg-success">Done</span></td>
-											<td class="d-none d-md-table-cell">Christina Mason</td>
-										</tr>
-										<tr>
-											<td>Project Wombat</td>
-											<td class="d-none d-xl-table-cell">01/01/2021</td>
-											<td class="d-none d-xl-table-cell">31/06/2021</td>
-											<td><span class="badge bg-warning">In progress</span></td>
-											<td class="d-none d-md-table-cell">William Harris</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-						</div>
-					</div> -->
 				</div>
 			</main>
 			<!-- akhir bagian konten -->
@@ -345,7 +266,7 @@
 				</div>
 			</footer>
 			<!-- akhir bagian footer -->
-			
+
 		</div>
 	</div>
 
